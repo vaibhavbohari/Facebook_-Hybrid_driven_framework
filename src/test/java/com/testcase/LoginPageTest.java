@@ -1,17 +1,24 @@
 package com.testcase;
+import com.utilities.TestUtil;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.base.BaseClass;
 import com.pages.HomePage;
 import com.pages.LoginPage;
 
+
 public class LoginPageTest extends BaseClass {
 	LoginPage loginPage;
 	HomePage homePage;
+	TestUtil testUtil;
+	String sheetName ="Sheet1" ;
+	Logger  log = Logger.getLogger(LoginPageTest.class);
 
 	public LoginPageTest() {
 		super();
@@ -19,6 +26,7 @@ public class LoginPageTest extends BaseClass {
 
 	@BeforeMethod
 	public void setUp() {
+		log.info("******** Starting test cases execution  *********");
 		initialization();
 		loginPage = new LoginPage();
 
@@ -36,14 +44,28 @@ public class LoginPageTest extends BaseClass {
 		Assert.assertTrue(flag);
 	}
 
+	@DataProvider
+	public Object[][] getLoginTestData() {
+		Object data [][] = TestUtil.getTestData(sheetName);
+		return data;
+	}
+	
+	@Test(dataProvider = "getLoginTestData")
+	public void multipleLoginTest(String userName,String password) throws InterruptedException {
+		homePage =loginPage.loginMultipleAccounts(userName,password);
+		Thread.sleep(3000);
+	    log.info("login successful with username: " +userName);
+	}
 	@Test(priority = 3)
 	public void loginTest() {
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		log.info("login successful with username and Password");
 	}
-
+	
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();
+		  log.info("browser is closed");
 
 	}
 }

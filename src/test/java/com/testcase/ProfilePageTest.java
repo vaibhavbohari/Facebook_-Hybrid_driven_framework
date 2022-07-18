@@ -19,7 +19,6 @@ public class ProfilePageTest extends BaseClass {
 	LoginPage loginPage;
 	HomePage homePage;
 	ProfilePage profilePage;
-	
 
 	public ProfilePageTest() {
 		super();
@@ -33,9 +32,6 @@ public class ProfilePageTest extends BaseClass {
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 
 	}
-
-
-	
 
 	@Test(priority = 1)
 	public void click_profilePage() {
@@ -54,7 +50,6 @@ public class ProfilePageTest extends BaseClass {
 		profilePage.click_photoUpload();
 		log.info("Click on Upload Photo");
 		Thread.sleep(2000);
-		
 
 	}
 

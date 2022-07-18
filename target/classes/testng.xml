@@ -2,8 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Facebook Application Test Automation Test Suite">
 
-	
-
+	<listeners>
+		<listener class-name="com.ExtentListener.ExtentReporterNG"/>
+    </listeners>
 
 	<test name="Facebook App Test Cases">
 		<classes>

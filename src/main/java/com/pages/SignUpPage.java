@@ -6,51 +6,52 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.base.BaseClass;
 
-public class SignUpPage  extends BaseClass{
+public class SignUpPage extends BaseClass {
 
 	@FindBy(linkText = "Create New Account")
-    WebElement signUp;
+	WebElement signUp;
 
-	@FindBy(xpath ="//input[@placeholder='First name']"  )
+	@FindBy(xpath = "//input[@placeholder='First name']")
 	WebElement firstname;
 
 	@FindBy(name = "lastname")
 	WebElement lastname;
-	
+
 	@FindBy(name = "reg_email__")
 	WebElement reg_email__;
-	
+
 	@FindBy(name = "reg_email_confirmation__")
 	WebElement reg_email_confirmation__;
-	
+
 	@FindBy(id = "password_step_input")
 	WebElement reg_passwd__;
 
 	@FindBy(name = "birthday_day")
 	WebElement birthday_day;
-	
+
 	@FindBy(name = "birthday_month")
 	WebElement birthday_month;
-	
+
 	@FindBy(name = "birthday_year")
 	WebElement birthday_year;
-	
+
 	@FindBy(name = "sex")
 	WebElement gender;
 
 	@FindBy(name = "websubmit")
 	WebElement signUpBtn;
-	
+
 	public SignUpPage() {
 		PageFactory.initElements(driver, this);
 		signUp.click();
 	}
-	
+
 	public String validateSignUpPageTitle() {
 		return driver.getTitle();
 	}
-	
-	public LoginPage signUp(String fn, String ln, String em, String vem, String pwd, String bd, String bm, String by, String g) {
+
+	public LoginPage signUp(String fn, String ln, String em, String vem, String pwd, String bd, String bm, String by,
+			String g) {
 		firstname.sendKeys(fn);
 		lastname.sendKeys(ln);
 		reg_email__.sendKeys(em);
@@ -63,6 +64,5 @@ public class SignUpPage  extends BaseClass{
 		signUpBtn.click();
 		return new LoginPage();
 	}
-
 
 }

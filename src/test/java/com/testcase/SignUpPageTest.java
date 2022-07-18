@@ -13,8 +13,6 @@ public class SignUpPageTest extends BaseClass {
 
 	SignUpPage signUpPage;
 	LoginPage loginPage;
-	
-	
 
 	public SignUpPageTest() {
 		super();
@@ -35,7 +33,10 @@ public class SignUpPageTest extends BaseClass {
 
 	@Test(priority = 2)
 	public void SignUpTest() {
-		loginPage = signUpPage.signUp(prop.getProperty("firstname"), prop.getProperty("lastname"),prop.getProperty("email"),prop.getProperty("verifyEmail"),prop.getProperty("password"),prop.getProperty("birthDay"),prop.getProperty("birthMonth"),prop.getProperty("birthYear"),prop.getProperty("gender"));
+		loginPage = signUpPage.signUp(prop.getProperty("firstname"), prop.getProperty("lastname"),
+				prop.getProperty("email"), prop.getProperty("verifyEmail"), prop.getProperty("password"),
+				prop.getProperty("birthDay"), prop.getProperty("birthMonth"), prop.getProperty("birthYear"),
+				prop.getProperty("gender"));
 	}
 
 	@AfterMethod
@@ -43,4 +44,3 @@ public class SignUpPageTest extends BaseClass {
 		driver.quit();
 	}
 }
-

@@ -10,6 +10,7 @@ import com.pages.FindFriends;
 import com.pages.HomePage;
 import com.pages.LoginPage;
 
+
 public class FindFriendsTest extends BaseClass {
 	LoginPage loginPage;
 	HomePage homePage;

@@ -10,12 +10,18 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.utilities.TestUtil;
+import com.utilities.WebEventListener;
+
 
 public class BaseClass {
 	public static Properties prop;
 	public static WebDriver driver;
+	public  static EventFiringWebDriver e_driver;
+	public static WebEventListener eventListener;
+
 	public static Logger log =Logger.getLogger(BaseClass.class) ;
 	
 	
@@ -47,6 +53,14 @@ public class BaseClass {
 				driver = new FirefoxDriver();
 				log.info("Lunching Firefox Browser....");
 		}
+		
+		
+		e_driver = new EventFiringWebDriver(driver);
+		// Now create object of EventListerHandler to register it with EventFiringWebDriver
+		eventListener = new WebEventListener();
+		e_driver.register(eventListener);
+		driver = e_driver;
+		
 		driver.manage().window().maximize();
 		log.info("Maximizing Browser....");
 		driver.manage().deleteAllCookies();
