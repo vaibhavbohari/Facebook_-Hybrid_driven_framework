@@ -1,10 +1,5 @@
 package com.utilities;
 
-
-
-
-
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -19,16 +14,17 @@ import org.openqa.selenium.TakesScreenshot;
 
 import com.base.BaseClass;
 
-public class TestUtil  extends BaseClass{
+public class TestUtil extends BaseClass {
 
 	public static long Page_Load_TImeOut = 30;
-	public static long IMPLICIT =20;
-	
+	public static long IMPLICIT = 20;
+
 	public static String TESTDATA_SHEET_PATH = "C:\\Users\\VAIBHAV\\eclipse-workspace\\Facebook_Framework\\src\\main\\java\\com\\testdata\\TestData.xlsx";
 	static Workbook book;
 	static Sheet sheet;
-	//"/Users/naveenkhunteta/Documents/workspace"
-	//+ "/FreeCRMTest/src/main/java/com/crm/qa/testdata/FreeCrmTestData.xlsx";
+
+	// "/Users/naveenkhunteta/Documents/workspace"
+	// + "/FreeCRMTest/src/main/java/com/crm/qa/testdata/FreeCrmTestData.xlsx";
 	public static Object[][] getTestData(String sheetName) {
 		FileInputStream file = null;
 		try {
@@ -45,7 +41,7 @@ public class TestUtil  extends BaseClass{
 		}
 		sheet = book.getSheet(sheetName);
 		Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
-		//System.out.println(sheet.getLastRowNum() + "--------" +
+		// System.out.println(sheet.getLastRowNum() + "--------" +
 		// sheet.getRow(0).getLastCellNum());
 		for (int i = 0; i < sheet.getLastRowNum(); i++) {
 			for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) {
@@ -55,17 +51,11 @@ public class TestUtil  extends BaseClass{
 		}
 		return data;
 	}
-	
+
 	public static void takeScreenshotAtEndOfTest() throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
 		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
 	}
-	
-	
-	
-	
-	
-	
-	
+
 }

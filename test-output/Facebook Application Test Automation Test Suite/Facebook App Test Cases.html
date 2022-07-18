@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>23/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jul 17 14:44:04 IST 2022</td>
+<td>Started on:</td><td>Mon Jul 18 14:28:45 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>274 seconds (274926 ms)</td>
+<tr><td>Total time:</td><td>246 seconds (246468 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,18 +75,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.testcase.FindFriendsTest.verifyFindFriendsTitleTest()'><b>verifyFindFriendsTitleTest</b><br>Test class: com.testcase.FindFriendsTest</td>
-<td><div><pre>java.lang.AssertionError: Home Page is Incorrect expected [Facebook] but found [(2) Facebook]
-	at com.testcase.FindFriendsTest.verifyFindFriendsTitleTest(FindFriendsTest.java:37)
+<td title='com.testcase.HomePageTest.HomePageTitleTest()'><b>HomePageTitleTest</b><br>Test class: com.testcase.HomePageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [Facebook] but found [Facebook – log in or sign up]
+	at com.testcase.HomePageTest.HomePageTitleTest(HomePageTest.java:50)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace498884733", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace498884733'><pre>java.lang.AssertionError: Home Page is Incorrect expected [Facebook] but found [(2) Facebook]
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace88094983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace88094983'><pre>java.lang.AssertionError: expected [Facebook] but found [Facebook – log in or sign up]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
-	at com.testcase.FindFriendsTest.verifyFindFriendsTitleTest(FindFriendsTest.java:37)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.testcase.HomePageTest.HomePageTitleTest(HomePageTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -116,8 +117,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>com.testcase.FindFriendsTest@68878f6d</td></tr>
+<td>7</td>
+<td>com.testcase.HomePageTest@68746f22</td></tr>
 <tr>
 <td title='com.testcase.ProfilePageTest.click_uploadPhoto()'><b>click_uploadPhoto</b><br>Test class: com.testcase.ProfilePageTest</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Save&apos;]&quot;}
@@ -126,9 +127,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
 System info: host: &apos;LAPTOP-N926GS71&apos;, ip: &apos;192.168.43.185&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b95b8da0461ffde57f849666b5acec26, findElement {using=xpath, value=//span[text()=&apos;Save&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VAIBHAV\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61498}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61498/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b95b8da0461ffde57f849666b5acec26
+Command: [958d8824fb0dcd9811b03de10e90ffae, findElement {using=xpath, value=//span[text()=&apos;Save&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VAIBHAV\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53040}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53040/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 958d8824fb0dcd9811b03de10e90ffae
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -149,16 +150,16 @@ Session ID: b95b8da0461ffde57f849666b5acec26
 	at com.pages.ProfilePage.click_photoUpload(ProfilePage.java:62)
 	at com.testcase.ProfilePageTest.click_uploadPhoto(ProfilePageTest.java:50)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace739241900", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace739241900'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Save&apos;]&quot;}
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1743032972", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1743032972'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Save&apos;]&quot;}
   (Session info: chrome=103.0.5060.114)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
 System info: host: &apos;LAPTOP-N926GS71&apos;, ip: &apos;192.168.43.185&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b95b8da0461ffde57f849666b5acec26, findElement {using=xpath, value=//span[text()=&apos;Save&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VAIBHAV\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61498}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61498/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b95b8da0461ffde57f849666b5acec26
+Command: [958d8824fb0dcd9811b03de10e90ffae, findElement {using=xpath, value=//span[text()=&apos;Save&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VAIBHAV\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53040}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53040/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 958d8824fb0dcd9811b03de10e90ffae
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -215,22 +216,21 @@ Session ID: b95b8da0461ffde57f849666b5acec26
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>30</td>
+<td>34</td>
 <td>com.testcase.ProfilePageTest@2f01783a</td></tr>
 <tr>
-<td title='com.testcase.HomePageTest.HomePageTitleTest()'><b>HomePageTitleTest</b><br>Test class: com.testcase.HomePageTest</td>
-<td><div><pre>java.lang.AssertionError: expected [Facebook] but found [Facebook – log in or sign up]
-	at com.testcase.HomePageTest.HomePageTitleTest(HomePageTest.java:45)
+<td title='com.testcase.FindFriendsTest.verifyFindFriendsTitleTest()'><b>verifyFindFriendsTitleTest</b><br>Test class: com.testcase.FindFriendsTest</td>
+<td><div><pre>java.lang.AssertionError: Home Page is Incorrect expected [Facebook] but found [(1) Facebook]
+	at com.testcase.FindFriendsTest.verifyFindFriendsTitleTest(FindFriendsTest.java:36)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace131837504", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace131837504'><pre>java.lang.AssertionError: expected [Facebook] but found [Facebook – log in or sign up]
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1567903868", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1567903868'><pre>java.lang.AssertionError: Home Page is Incorrect expected [Facebook] but found [(1) Facebook]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.testcase.HomePageTest.HomePageTitleTest(HomePageTest.java:45)
+	at com.testcase.FindFriendsTest.verifyFindFriendsTitleTest(FindFriendsTest.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -260,8 +260,8 @@ Session ID: b95b8da0461ffde57f849666b5acec26
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>7</td>
-<td>com.testcase.HomePageTest@68746f22</td></tr>
+<td>0</td>
+<td>com.testcase.FindFriendsTest@68878f6d</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -271,64 +271,24 @@ Session ID: b95b8da0461ffde57f849666b5acec26
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.testcase.FindFriendsTest.verifyBirthdaysLink()'><b>verifyBirthdaysLink</b><br>Test class: com.testcase.FindFriendsTest</td>
-<td></td>
-<td>2</td>
-<td>com.testcase.FindFriendsTest@68878f6d</td></tr>
-<tr>
-<td title='com.testcase.LoginPageTest.faceBookLogoImageTest()'><b>faceBookLogoImageTest</b><br>Test class: com.testcase.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.testcase.LoginPageTest@13d73f29</td></tr>
-<tr>
 <td title='com.testcase.LoginPageTest.multipleLoginTest()'><b>multipleLoginTest</b><br>Test class: com.testcase.LoginPageTest<br>Parameters: vaibhavbohari@gmail.com, Vaibhav1@</td>
 <td></td>
 <td>3</td>
 <td>com.testcase.LoginPageTest@13d73f29</td></tr>
-<tr>
-<td title='com.testcase.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.testcase.LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.testcase.LoginPageTest@13d73f29</td></tr>
-<tr>
-<td title='com.testcase.FindFriendsTest.verifyFriendRequestLink()'><b>verifyFriendRequestLink</b><br>Test class: com.testcase.FindFriendsTest</td>
-<td></td>
-<td>0</td>
-<td>com.testcase.FindFriendsTest@68878f6d</td></tr>
-<tr>
-<td title='com.testcase.ProfilePageTest.click_profilePage()'><b>click_profilePage</b><br>Test class: com.testcase.ProfilePageTest</td>
-<td></td>
-<td>10</td>
-<td>com.testcase.ProfilePageTest@2f01783a</td></tr>
 <tr>
 <td title='com.testcase.LoginPageTest.loginPageTitleTest()'><b>loginPageTitleTest</b><br>Test class: com.testcase.LoginPageTest</td>
 <td></td>
 <td>0</td>
 <td>com.testcase.LoginPageTest@13d73f29</td></tr>
 <tr>
-<td title='com.testcase.HomePageTest.verifyMenuLinkTest()'><b>verifyMenuLinkTest</b><br>Test class: com.testcase.HomePageTest</td>
+<td title='com.testcase.HomePageTest.verifyHomePage()'><b>verifyHomePage</b><br>Test class: com.testcase.HomePageTest</td>
 <td></td>
-<td>4</td>
+<td>11</td>
 <td>com.testcase.HomePageTest@68746f22</td></tr>
 <tr>
-<td title='com.testcase.FindFriendsTest.verifyCustomsLink()'><b>verifyCustomsLink</b><br>Test class: com.testcase.FindFriendsTest</td>
+<td title='com.testcase.HomePageTest.verifyMessengerLinkTest()'><b>verifyMessengerLinkTest</b><br>Test class: com.testcase.HomePageTest</td>
 <td></td>
-<td>1</td>
-<td>com.testcase.FindFriendsTest@68878f6d</td></tr>
-<tr>
-<td title='com.testcase.HomePageTest.verifyUserNameTest()'><b>verifyUserNameTest</b><br>Test class: com.testcase.HomePageTest</td>
-<td></td>
-<td>7</td>
-<td>com.testcase.HomePageTest@68746f22</td></tr>
-<tr>
-<td title='com.testcase.LoginPageTest.multipleLoginTest()'><b>multipleLoginTest</b><br>Test class: com.testcase.LoginPageTest<br>Parameters: vaibhavbohari@1997gmail.com, Vaibhav2@</td>
-<td></td>
-<td>3</td>
-<td>com.testcase.LoginPageTest@13d73f29</td></tr>
-<tr>
-<td title='com.testcase.HomePageTest.verifyClickOnLogout()'><b>verifyClickOnLogout</b><br>Test class: com.testcase.HomePageTest</td>
-<td></td>
-<td>10</td>
+<td>5</td>
 <td>com.testcase.HomePageTest@68746f22</td></tr>
 <tr>
 <td title='com.testcase.ProfilePageTest.verifyProfile()'><b>verifyProfile</b><br>Test class: com.testcase.ProfilePageTest</td>
@@ -336,24 +296,14 @@ Session ID: b95b8da0461ffde57f849666b5acec26
 <td>5</td>
 <td>com.testcase.ProfilePageTest@2f01783a</td></tr>
 <tr>
-<td title='com.testcase.LoginPageTest.multipleLoginTest()'><b>multipleLoginTest</b><br>Test class: com.testcase.LoginPageTest<br>Parameters: vaibhav@1451gmail.com, vaibhav589@</td>
-<td></td>
-<td>3</td>
-<td>com.testcase.LoginPageTest@13d73f29</td></tr>
-<tr>
-<td title='com.testcase.HomePageTest.verifyClickOnFriends()'><b>verifyClickOnFriends</b><br>Test class: com.testcase.HomePageTest</td>
-<td></td>
-<td>8</td>
-<td>com.testcase.HomePageTest@68746f22</td></tr>
-<tr>
-<td title='com.testcase.FindFriendsTest.verifySuggestionsLink()'><b>verifySuggestionsLink</b><br>Test class: com.testcase.FindFriendsTest</td>
+<td title='com.testcase.FindFriendsTest.verifyBirthdaysLink()'><b>verifyBirthdaysLink</b><br>Test class: com.testcase.FindFriendsTest</td>
 <td></td>
 <td>1</td>
 <td>com.testcase.FindFriendsTest@68878f6d</td></tr>
 <tr>
-<td title='com.testcase.FindFriendsTest.add_friend()'><b>add_friend</b><br>Test class: com.testcase.FindFriendsTest</td>
+<td title='com.testcase.FindFriendsTest.verifyCustomsLink()'><b>verifyCustomsLink</b><br>Test class: com.testcase.FindFriendsTest</td>
 <td></td>
-<td>4</td>
+<td>1</td>
 <td>com.testcase.FindFriendsTest@68878f6d</td></tr>
 <tr>
 <td title='com.testcase.HomePageTest.verifyNotificationsLinkTest()'><b>verifyNotificationsLinkTest</b><br>Test class: com.testcase.HomePageTest</td>
@@ -366,22 +316,72 @@ Session ID: b95b8da0461ffde57f849666b5acec26
 <td>0</td>
 <td>com.testcase.SignUpPageTest@41488b16</td></tr>
 <tr>
-<td title='com.testcase.FindFriendsTest.confirm_friend()'><b>confirm_friend</b><br>Test class: com.testcase.FindFriendsTest</td>
+<td title='com.testcase.LoginPageTest.multipleLoginTest()'><b>multipleLoginTest</b><br>Test class: com.testcase.LoginPageTest<br>Parameters: vaibhavbohari@1997gmail.com, Vaibhav2@</td>
 <td></td>
-<td>4</td>
+<td>3</td>
+<td>com.testcase.LoginPageTest@13d73f29</td></tr>
+<tr>
+<td title='com.testcase.LoginPageTest.multipleLoginTest()'><b>multipleLoginTest</b><br>Test class: com.testcase.LoginPageTest<br>Parameters: vaibhav@1451gmail.com, vaibhav589@</td>
+<td></td>
+<td>3</td>
+<td>com.testcase.LoginPageTest@13d73f29</td></tr>
+<tr>
+<td title='com.testcase.HomePageTest.verifyClickOnLogout()'><b>verifyClickOnLogout</b><br>Test class: com.testcase.HomePageTest</td>
+<td></td>
+<td>10</td>
+<td>com.testcase.HomePageTest@68746f22</td></tr>
+<tr>
+<td title='com.testcase.FindFriendsTest.verifyFriendRequestLink()'><b>verifyFriendRequestLink</b><br>Test class: com.testcase.FindFriendsTest</td>
+<td></td>
+<td>0</td>
 <td>com.testcase.FindFriendsTest@68878f6d</td></tr>
+<tr>
+<td title='com.testcase.LoginPageTest.faceBookLogoImageTest()'><b>faceBookLogoImageTest</b><br>Test class: com.testcase.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.testcase.LoginPageTest@13d73f29</td></tr>
 <tr>
 <td title='com.testcase.SignUpPageTest.SignUpTest()'><b>SignUpTest</b><br>Test class: com.testcase.SignUpPageTest</td>
 <td></td>
 <td>1</td>
 <td>com.testcase.SignUpPageTest@41488b16</td></tr>
 <tr>
-<td title='com.testcase.HomePageTest.verifyHomePage()'><b>verifyHomePage</b><br>Test class: com.testcase.HomePageTest</td>
+<td title='com.testcase.FindFriendsTest.confirm_friend()'><b>confirm_friend</b><br>Test class: com.testcase.FindFriendsTest</td>
 <td></td>
-<td>8</td>
+<td>4</td>
+<td>com.testcase.FindFriendsTest@68878f6d</td></tr>
+<tr>
+<td title='com.testcase.HomePageTest.verifyMenuLinkTest()'><b>verifyMenuLinkTest</b><br>Test class: com.testcase.HomePageTest</td>
+<td></td>
+<td>5</td>
 <td>com.testcase.HomePageTest@68746f22</td></tr>
 <tr>
-<td title='com.testcase.HomePageTest.verifyMessengerLinkTest()'><b>verifyMessengerLinkTest</b><br>Test class: com.testcase.HomePageTest</td>
+<td title='com.testcase.FindFriendsTest.add_friend()'><b>add_friend</b><br>Test class: com.testcase.FindFriendsTest</td>
+<td></td>
+<td>4</td>
+<td>com.testcase.FindFriendsTest@68878f6d</td></tr>
+<tr>
+<td title='com.testcase.ProfilePageTest.click_profilePage()'><b>click_profilePage</b><br>Test class: com.testcase.ProfilePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.testcase.ProfilePageTest@2f01783a</td></tr>
+<tr>
+<td title='com.testcase.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.testcase.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.testcase.LoginPageTest@13d73f29</td></tr>
+<tr>
+<td title='com.testcase.FindFriendsTest.verifySuggestionsLink()'><b>verifySuggestionsLink</b><br>Test class: com.testcase.FindFriendsTest</td>
+<td></td>
+<td>1</td>
+<td>com.testcase.FindFriendsTest@68878f6d</td></tr>
+<tr>
+<td title='com.testcase.HomePageTest.verifyClickOnFriends()'><b>verifyClickOnFriends</b><br>Test class: com.testcase.HomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.testcase.HomePageTest@68746f22</td></tr>
+<tr>
+<td title='com.testcase.HomePageTest.verifyUserNameTest()'><b>verifyUserNameTest</b><br>Test class: com.testcase.HomePageTest</td>
 <td></td>
 <td>5</td>
 <td>com.testcase.HomePageTest@68746f22</td></tr>
