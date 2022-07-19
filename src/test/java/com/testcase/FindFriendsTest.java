@@ -54,12 +54,14 @@ public class FindFriendsTest extends BaseClass {
 	@Test(priority = 5)
 	public void verifyCustomsLink() {
 		findFriends.clickonCustomLists();
+		log.info("verifyCustomsLink....");
 	}
 
 	@Test(priority = 6)
 	public void add_friend() throws InterruptedException {
 		findFriends.clickAddFriend();
 		log.info("Click on Add Friend....");
+		log.info("add Friend....");
 		Thread.sleep(3000);
 	}
 
